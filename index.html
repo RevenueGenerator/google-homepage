@@ -1,33 +1,84 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google-odin</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
-
 <body>
-<div class="logo">
-    <img class="logo" src="googlelogo.png" alt="Google" />
+    <div class="container">
+
+        <nav>
+            <div class="google-home-nav">
+                <img class="google-home-nav__profile-image"
+                    src="https://lh3.googleusercontent.com/ogw/ADGmqu9dM99gtQGjjin4SvJnz8KqTNgwcJ8G2E36NsBG=s32-c-mo" />
+                <svg class="google-home-nav__apps-icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" />
+                </svg>
+                <p class="google-home-nav__links">Images</p>
+                <p class="google-home-nav__links">Gmail</p>
+            </div>
+        </nav>
+
+        <main>
+            <div class="google-main-content">
+                <div class="google-main-content__image">
+                    <img src="googlelogo.png" />
+                </div>
+                <div class="google-main-content__search">
+                    <svg class="google-main-content__search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                        height="24" viewBox="0 0 24 24" width="24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                    <input class="google-main-content__search-input" type="text" />
+                </div>
+                <div class="google-main-content__submit-btns">
+                    <button class="google-main-content__submit-btns-search">Google Search</button>
+                    <button class="google-main-content__submit-btns-lucky">I'm Feeling Lucky!</button>
+                </div>
+                <div class="google-main-content__translations">
+                    <p class="google-main-content__translations-options">Google offered in: <a
+                            class="google-main-content__translations-options-jpn">日本語</a></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+<div class="footer-links">
+    <div class="footer-links__first-row">
+        <p class="footer-links__first-row-text">Japan</p>
+    </div>
+    <div class="footer-links__second-row">
+        <div class="footer-links__second-row-first-col">
+            <p class="footer-links__second-row-text">About</p>
+            <p class="footer-links__second-row-text">Advertising</p>
+            <p class="footer-links__second-row-text">Business</p>
+            <p class="footer-links__second-row-text">How search works</p>
+        </div>
+        <div class="footer-links__second-row-second-col">
+            <p class="footer-links__second-row-second-col-text">Privacy</p>
+            <p class="footer-links__second-row-second-col-text">Terms</p>
+            <p class="footer-links__second-row-second-col-text">Settings</p>
+        </div>
+    </div>
+
 </div>
 
-<div class="searchbar">
-    <form>
-        <input action="/search" type="text" maxlength="2048" method="GET" role="search"></input>
-    </form>
-</div>
+        </footer>
 
-<div class="buttons">
-    <input class="search" value="Google Search" aria-label="Google Search" name="googlesearch" type="submit">
-    <input class="luckyh" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="I'm Feeling Lucky" type="submit">
-
-</div>
-
+    </div>
 
 
 </body>
-
-
-<footer></footer>
 
 </html>
